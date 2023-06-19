@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ScamEngine</title>
+    <title>Unity WebGL Player | MAS</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=640 height=960></canvas>
+      <canvas id="unity-canvas" width=720 height=1280></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">ScamEngine</div>
+        <div id="unity-build-title">MAS</div>
       </div>
     </div>
     <script>
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGL.loader.js";
+      var loaderUrl = buildUrl + "/GameTest.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL.data",
-        frameworkUrl: buildUrl + "/WebGL.framework.js",
-        codeUrl: buildUrl + "/WebGL.wasm",
+        dataUrl: buildUrl + "/GameTest.data.gz",
+        frameworkUrl: buildUrl + "/GameTest.framework.js.gz",
+        codeUrl: buildUrl + "/GameTest.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "MAS",
-        productName: "ScamEngine",
-        productVersion: "0.1.0",
+        companyName: "DefaultCompany",
+        productName: "MAS",
+        productVersion: "1.0",
         showBanner: unityShowBanner,
       };
 
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "640px";
-        canvas.style.height = "960px";
+        canvas.style.width = "720px";
+        canvas.style.height = "1280px";
       }
 
       loadingBar.style.display = "block";
