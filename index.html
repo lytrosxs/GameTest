@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | MAS 3.0</title>
+    <title>Unity WebGL Player | MAS 4.0 (Beter Performance)</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">MAS 3.0</div>
+        <div id="unity-build-title">MAS 4.0 (Beter Performance)</div>
       </div>
     </div>
     <script>
@@ -59,12 +59,12 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/GameTest.loader.js";
       var config = {
-        dataUrl: buildUrl + "/GameTest.data",
-        frameworkUrl: buildUrl + "/GameTest.framework.js",
-        codeUrl: buildUrl + "/GameTest.wasm",
+        dataUrl: buildUrl + "/GameTest.data.unityweb",
+        frameworkUrl: buildUrl + "/GameTest.framework.js.unityweb",
+        codeUrl: buildUrl + "/GameTest.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "hengoui",
-        productName: "MAS 3.0",
+        productName: "MAS 4.0 (Beter Performance)",
         productVersion: "",
         showBanner: unityShowBanner,
       };
